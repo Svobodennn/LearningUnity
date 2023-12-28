@@ -15,25 +15,25 @@ public class NewBehaviourScript1 : MonoBehaviour
         //ArrayList dordeBolunenler = new ArrayList();
         //ArrayList beseBolunenler = new ArrayList();
 
-        string tumListeString = "Tüm liste: ";
-        string ikiyeBolunenlerString = "İkiye bölünenler: ";
-        string uceBolunenlerString = "Üçe bölünenler: ";
-        string dordeBolunenlerString = "Dörde bölünenler: ";
-        string beseBolunenlerString = "Beşe bölünenler: ";
+        string tumListeString = "TÃ¼m liste: ";
+        string ikiyeBolunenlerString = "Ãkiye bÃ¶lÃ¼nenler: ";
+        string uceBolunenlerString = "ÃœÃ§e bÃ¶lÃ¼nenler: ";
+        string dordeBolunenlerString = "DÃ¶rde bÃ¶lÃ¼nenler: ";
+        string beseBolunenlerString = "BeÃ¾e bÃ¶lÃ¼nenler: ";
 
         for (int i = ilkSayi; i <= ikinciSayi; i++)
         {
-            //tumListe.Add(i);
+            tumListe.Add(i);
         }
 
-        // listedeki tüm sayılar için
+        // listedeki tÃ¼m sayÃ½lar iÃ§in
         foreach (int i in tumListe)
         {
-            // tüm liste stringe koyuyoruz
+            // tÃ¼m liste stringe koyuyoruz
             tumListeString += "-" + i + " ";
 
-            // modlarından kalana göre
-            // ikiye tam bölünenler
+            // modlarÃ½ndan kalana gÃ¶re
+            // ikiye tam bÃ¶lÃ¼nenler
             if (i % 2 == 0)
             {
                 //ikiyeBolunenler.Add(i);
@@ -42,12 +42,12 @@ public class NewBehaviourScript1 : MonoBehaviour
 
             if (i % 3 == 0)
             {
-                // üçe tam bölünenler
+                // Ã¼Ã§e tam bÃ¶lÃ¼nenler
                 //uceBolunenler.Add(i);
                 uceBolunenlerString += "-" + i + " ";
             }
 
-            // dörde tam bölünenler
+            // dÃ¶rde tam bÃ¶lÃ¼nenler
             if (i % 4 == 0)
             {
                 //dordeBolunenler.Add(i);
@@ -56,7 +56,7 @@ public class NewBehaviourScript1 : MonoBehaviour
 
             if ((i % 5) == 0)
             {
-                // beşe tam bölünenler
+                // beÃ¾e tam bÃ¶lÃ¼nenler
                 //beseBolunenler.Add(i);
                 beseBolunenlerString += "-" + i + " ";
             }
